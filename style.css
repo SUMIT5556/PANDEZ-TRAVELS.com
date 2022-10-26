@@ -1,0 +1,249 @@
+*{
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+}
+body{
+  font-family: cursive;
+}
+nav{
+  background: #333;
+  height: 80px;
+  width: 100%;
+}
+label.logo{
+  color: white;
+  font-size: 25px;
+  line-height: 80px;
+  padding: 0 100px;
+  font-weight: bold;
+}
+nav ul{
+  float: right;
+  margin-right: 20px;
+
+}
+nav ul li{
+  display: inline-block;
+  line-height: 80px;
+  margin: 0 5px;
+}
+nav ul li a{
+  color: white;
+  font-size: 17px;
+  padding: 7px 13px;
+  border-radius: 3px;
+  text-transform: uppercase;
+}
+a.act,a:hover{
+  background: orange;
+  transition: .5s;
+
+}
+.chkbt{
+  font-size: 30px;
+  color: white;
+  float: right;
+  line-height: 80px;
+  margin-right: 40px;
+  cursor: pointer;
+  display: none;
+}
+#check{
+  display: none;
+}
+@media (max-width: 952px){
+  label.logo{
+    font-size: 30px;
+    padding-left: 50px;
+  }
+  nav ul li a{
+    font-size: 16px;
+  }
+}
+@media (max-width: 858px){
+  label.logo{
+    font-size: 23px;
+  }
+  .chkbt{
+    display: block;
+  }
+  ul{
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background: grey;
+    top: 80px;
+    left: -100%;
+    text-align: center;
+    transition: all .5s;
+  }
+  nav ul li{
+    display: block;
+  }
+  nav ul li a{
+    font-size: 20px;
+    margin: 50px 0;
+    line-height: 30px;
+  }
+  a:hover,a.active{
+    background: none;
+    color: orange;
+  }
+  #check:checked ~ ul{
+    left: 0;
+  } 
+
+
+}
+.bkgg{
+  background: url(185289.webp) no-repeat;
+  background-size: cover;
+  height: calc(100vh - 80px);
+}
+@media (max-width: 500px){
+  label.logo{
+    font-size: 20px;
+    
+  }
+}
+main {
+  width: 100%;
+  height: 85vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white;
+}
+
+section h3 {
+  font-family: cursive;
+  color: orange;
+  font-size: 35px;
+  font-weight: 300;
+  letter-spacing: 3px;
+  text-shadow: 1px 1px 2px black;
+}
+
+section h1 {
+  margin: 30px 0 20px 0;
+  font-size: 55px;
+  font-weight: 700;
+  text-shadow: 2px 1px 5px black;
+  text-transform: uppercase;
+}
+
+section p {
+  font-size: 25px;
+  color: darkgreen;
+  word-spacing: 2px;
+  margin-bottom: 25px;
+  text-shadow: 1px 1px 1px black;
+}
+
+section a {
+  padding: 12px 30px;
+  border-radius: 4px;
+  outline: none;
+  text-transform: uppercase;
+  font-size: 13px;
+  font-weight: 500;
+  text-decoration: none;
+  letter-spacing: 1px;
+  transition: all 0.5s ease;
+}
+
+section .btnone {
+  /*background: #00b894;*/
+  background: #fff;
+  color: #000;
+}
+
+.btnone:hover {
+  background: #00b894;
+  color: white;
+}
+
+section .btntwo {
+  background: #00b894;
+  color: white;
+}
+
+.btntwo:hover {
+  background: #fff;
+  color: #000;
+}
+
+.change_content:after {
+  content: "";
+  animation: changetext 10s infinite linear;
+  color: darkgoldenrod;
+}
+
+@keyframes changetext {
+  0% {
+    content: "USA";
+  }
+  20% {
+    content: "BANGKOK";
+  }
+  35% {
+    content: "DUBAI";
+  }
+  60% {
+    content: "INDIA";
+  }
+  80% {
+    content: "SINGAPORE";
+  }
+  100% {
+    content: "MALDIVES";
+  }
+}
+
+footer{
+  position: absolute;
+  left: 0;
+  right: 0;
+  background: #333;
+  height: auto;
+  width: 100vw;
+  font-family: cursive;
+  margin-top: 10px;
+  color: white;
+}
+.footer-content{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+}
+.footer-content h3{
+  font-size: 1.8rem;
+  font-weight: bolder;
+  line-height: 3rem;
+}
+.footer-content p{
+  max-width: 500px;
+  margin: 10px auto;
+  line-height: 28px;
+  font-size: 15px;
+  letter-spacing: 5px;
+}
+.foot .social{
+  text-align: center;
+  padding-bottom: 15px;
+  padding-top: 25px;
+}
+.foot .social a{
+  font-size: 24px;
+  color: white;
+  width: 40px;
+  height: 40px;
+  line-height: 38px;
+  margin: 0 8px;
+}

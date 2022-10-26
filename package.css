@@ -1,0 +1,46 @@
+*{
+    
+    box-sizing: border-box;
+    background: #333;
+}
+.clm{
+    float: left;
+    width: 33.33%;
+    padding: 5px;
+    
+    
+}
+.clm img{
+    width: 400px;
+    height: 300px;
+    border-radius: 20px;
+}
+.clm h3{
+    text-align: center;
+    color: white;
+
+}
+.clm h2{
+    text-align: center;
+    color: white;
+}
+@media (max-width: 450px){
+ .clm{
+    float: none;
+ }  
+ .clm img{
+    max-width: 470px;
+ } 
+ .clm h3{
+    margin-left: 150px;
+    font-family: cursive;
+    font-size: 35px;
+    color: orange;
+ }
+ .clm h2{
+    margin-left: 150px;
+    font-size: 35px;
+    font-family: cursive;
+    color: orange;
+ }
+}
